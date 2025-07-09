@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unowderlist</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> Trem Members </h1>
+       <ul style="display: flex; justify-content: space-between; list-style: none; padding: 0;">
+        <li>
+            <img src="my img.jpg" width="250px" height="250px" alt="">
+            <h2 style="text-align: center;">Sohanur Rahman</h2>
+             <p style="text-align: center;">Web Designer</p>
+        </li>
+         <li>
+             <img src="my img.jpg" width="250px" height="250px" alt="">
+            <h2 style="text-align: center;">Sohanur Rahman</h2>
+             <p style="text-align: center;">Web Designer</p>
+        </li>
+         <li>
+             <img src="my img.jpg" width="250px" height="250px" alt="">
+            <h2 style="text-align: center;">Sohanur Rahman</h2>
+             <p style="text-align: center;">Web Designer</p>
+        </li>
+         <li>
+            <img src="my img.jpg" width="250px" height="250px" alt="">
+            <h2 style="text-align: center;">Sohanur Rahman</h2>
+             <p style="text-align: center;">Web Designer</p>
+        </li>
+    </ul>
+    <h2 style="color: darkblue; text-align: center;"><span id="date"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="time"></span></h2>
+    <script>
+        document.getElementById('date').innerHTML= new Date().toLocaleDateString();
+        setInterval(() => document.getElementById('time').innerHTML= new Date().toLocaleTimeString());
+    </script>
+</body>
+</html>
